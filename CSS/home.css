@@ -10,7 +10,7 @@
 
 body {
     background-color: #595260;
-    height: 82vh;
+    height: 100vh;
 }
 
 .nav {
@@ -33,7 +33,7 @@ body {
 .navLogo {
     width: 100%;
     font-family: 'Syncopate', sans-serif;
-    font-size: 2.6em;
+    font-size: 2.6rem;
     color: #FFD523;
     position: relative;
     align-items: center;
@@ -77,6 +77,63 @@ body {
     display:none;
 }
 
+/* Estilos index */
+
+/* Slider de Fotos */
+
+.slider-frame {
+	width:60%;
+    height: auto;
+	margin: 10% auto;
+	overflow: hidden;
+
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: slide 20s infinite alternate ease-in-out;
+
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+
+}
+
+.slider-frame img {
+	width: 100%;
+    margin: auto;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+/* Fin Slider Fotos */
+
+.pieSlider {
+  margin: 0 4rem 0 4rem;
+
+}
+.parrafo {
+    font-size: 1.2rem;
+    color:#FFD523;
+}
+
+/* Fin Estilos Index */
+
 
 /* Compatibilidad para Mobile */
 
@@ -112,26 +169,14 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Estilos del Footer */
 footer {
-    margin-top: 82vh;
-    height: 8vh;
-    position: sticky;
+/*     margin-top: 16.2%;
+    height: 8vh; */
     background-color: #2C2E43;
     display: flex;
+    position:sticky;
+    bottom: 0;
     justify-content: space-evenly;
 }
 
