@@ -1,0 +1,215 @@
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+/* Estilos de Header y Barra de Navegación */
+
+body {
+    background-color: #595260;
+    height: 82vh;
+}
+
+.nav {
+   background-color: #2C2E43;
+   height: 10vh;
+   color: white;
+
+}
+
+.navContainer {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navLogo {
+    width: 100%;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 2.6em;
+    color: #FFD523;
+    position: relative;
+    align-items: center;
+}
+.navMenu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+}
+
+.navItem {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bolder;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.navItem::after {
+    content: "";
+    display: block;
+    background:#FFD523;
+    width: 90%;
+    margin-top: 3px;
+    height: 5px;
+    border-radius: 10px;
+    clip-path: var(--clippy);
+    transition: clip-path .5s;
+}
+
+.navItem:hover {
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.navInput:checked + .navMenu {
+    background: #FFD523;
+}
+
+.navLabel, .navInput {
+    display:none;
+}
+
+
+/* Compatibilidad para Mobile */
+
+@media (max-width:700px) {
+
+    /* Compatibilidad para mobile de la NavBar */
+    .navLabel{
+        display: block;
+        cursor: pointer;
+    }
+
+    .navMenu {
+        position: fixed;
+        top: 10vh;
+        bottom: 8vh;
+        background-color: #FFD523;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .navInput:checked + .navMenu {
+        clip-path: circle(100% at center);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos del Footer */
+footer {
+    margin-top: 82vh;
+    height: 8vh;
+    position: sticky;
+    background-color: #2C2E43;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fa-instagram {
+    color: #FFD523;
+    text-decoration: none;
+}
+
+.fa-facebook-square {
+    color: #FFD523;
+    text-decoration: none;
+}
+
+.fa-envelope {
+    color: #FFD523;
+    text-decoration: none;
+}
+
+.fa-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;     /* No sé por qué me tira un error, aparentemente de compatibilidad con otros navegadores */
+    text-decoration: none;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+    text-decoration: none;
+}
+
+.fa-envelope:hover {
+    color: rgb(123, 217, 245);
+    text-decoration: none;
+}
+
+
+/* .navBar {
+    background-color: rgb(186, 43, 43);
+    height: 10vh;
+    width: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    box-shadow: 5px 0 10px rgba(255, 255, 255, 0.46);
+}
+
+.logo {
+    color: white;
+    font-size: 280%;
+    padding: 0 80px;
+    font-weight: bold;
+
+}
+
+.navBarItems {
+   display: flex;
+   list-style: none;
+   margin-right: 2vh;
+   padding-right: 2vh;
+
+}
+
+.navBarItems li {
+    border-radius: 3px;
+    margin: 0 2vh;
+}
+
+.navBarItems li a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
+
+.navBarItems li:hover, li.active {
+    background-color: rgba(0, 0, 0, .4);
+    transition: .4s;
+} */
