@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
 
 }
 
@@ -11,6 +10,7 @@
 body {
     background-color: #595260;
     height: 100vh;
+
 }
 
 .nav {
@@ -34,10 +34,23 @@ body {
     width: 100%;
     font-family: 'Syncopate', sans-serif;
     font-size: 2.6rem;
+    font-weight: bold;
     color: #FFD523;
-    position: relative;
-    align-items: center;
+    margin-top: 22%;
+    margin-left: 6%;
+    line-height: 10%;
+    flex-wrap: nowrap;
+
 }
+
+.parrafo {
+    font-size: 100%;
+    color:#FFD523;
+    font-family: 'Syncopate', sans-serif;
+    margin-top: 8%;
+    margin-left: 3;
+}
+
 .navMenu {
     display: grid;
     grid-auto-flow: column;
@@ -78,62 +91,25 @@ body {
 }
 
 /* Estilos index */
-
-/* Slider de Fotos */
-
-.slider-frame {
-	width:60%;
-    height: auto;
-	margin: 10% auto;
-	overflow: hidden;
-
+ 
+.gallery {
+margin-top: 5%;
+margin-left: 10%;
+margin-right: 10%;
+}
+.gallery img{
+    height: 10%;
 }
 
-.slider-frame ul {
-	display: flex;
-	padding: 0;
-	width: 400%;
-	animation: slide 20s infinite alternate ease-in-out;
-
-}
-
-.slider-frame li {
-	width: 100%;
-	list-style: none;
-
-}
-
-.slider-frame img {
-	width: 100%;
-    margin: auto;
-}
-
-@keyframes slide {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
-}
-/* Fin Slider Fotos */
-
-.pieSlider {
-  margin: 0 4rem 0 4rem;
-
-}
-.parrafo {
-    font-size: 1.2rem;
-    color:#FFD523;
-}
 
 /* Fin Estilos Index */
 
+.pSlide {
+    margin-top: 4%;
+    color: #FFD523;
+    text-align: center;
+    padding-bottom: 12%;
+}
 
 /* Compatibilidad para Mobile */
 
@@ -158,6 +134,7 @@ body {
         align-items: center;
         clip-path: circle(0 at center);
         transition: clip-path 1s ease-in-out;
+        z-index: 1000;
     }
 
     .navInput:checked + .navMenu {
@@ -171,13 +148,21 @@ body {
 
 /* Estilos del Footer */
 footer {
-/*     margin-top: 16.2%;
-    height: 8vh; */
+    height: 8vh;
+    width: 100%;
     background-color: #2C2E43;
     display: flex;
-    position:sticky;
-    bottom: 0;
+    bottom: 0%;
+    align-self: flex-end;
     justify-content: space-evenly;
+    position:fixed;
+    bottom: 0;
+
+}
+
+footer div {
+    display: flex;
+    align-items: center;
 }
 
 .fa-instagram {
@@ -210,4 +195,78 @@ footer {
 .fa-envelope:hover {
     color: rgb(123, 217, 245);
     text-decoration: none;
+}
+
+
+
+
+/* CONTACTO */
+
+.map{
+    display: flex;
+    overflow:hidden;
+    padding-bottom:46.25%;
+    position:relative;
+    height:0;
+    justify-content: space-evenly;
+
+}
+
+.map iframe{
+    display: flex;
+    margin: auto;
+    width:80%;
+    position:absolute;
+
+}
+
+.contactForm {
+    display:flex;
+    width: 60vw;
+    margin: auto;
+    position: relative;
+    margin-bottom: 10%;
+    padding-bottom: 10%;
+}
+
+.form-label {
+    color: white;
+
+}
+
+.botonEnviar {
+    color: black;
+    background-color: #FFD523;
+    border-color: #FFD523;
+}
+
+/* NOSOTROS */
+
+.nosotrosweb {
+    display: grid;
+    margin-top: 4%;
+    padding-bottom: 14%;
+}
+
+/* TRABAJOS */
+
+.tablaTrabajos {
+    margin-top: 2%;
+   
+}
+
+/* CLIENTES */
+
+.client-container {
+    display: flex;
+
+}
+
+.ppal-client-container {
+    margin-top: 4%;
+
+}
+
+.ultimo-client-container {
+    padding-bottom: 15%;
 }
