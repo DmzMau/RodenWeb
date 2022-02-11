@@ -1,32 +1,33 @@
+/* RESET GENERAL */
+
 *   {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-/* Estilos de Header y Barra de Navegación */
+/* BODY */
 
 body {
-    background-color: #595260;
+    background-color: $colorFondo;
     height: 100vh;
 }
 
+/* HEADER Y NAV BAR */
+
 .nav {
-   background-color: #2C2E43;
-   height: 10vh;
-   color: white;
+    background-color: $colorNav;
+    height: 10vh;
+    color: $colorW;
+ }
 
-}
-
-.navContainer {
+ .navContainer {
     display: flex;
     height: 100%;
     width: 90%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .navLogo {
@@ -34,17 +35,16 @@ body {
     font-family: 'Syncopate', sans-serif;
     font-size: 2.6rem;
     font-weight: bold;
-    color: #FFD523;
+    color: $colorSecundario;
     margin-top: 22%;
     margin-left: 6%;
     line-height: 10%;
     flex-wrap: nowrap;
-
 }
 
 .parrafo {
     font-size: 100%;
-    color:#FFD523;
+    color: $colorSecundario;
     font-family: 'Syncopate', sans-serif;
     margin-top: 8%;
     margin-left: 3;
@@ -57,7 +57,7 @@ body {
 }
 
 .navItem {
-    color: white;
+    color: $colorW;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bolder;
@@ -67,7 +67,7 @@ body {
 .navItem::after {
     content: "";
     display: block;
-    background:#FFD523;
+    background: $colorSecundario;
     width: 90%;
     margin-top: 3px;
     height: 5px;
@@ -78,43 +78,20 @@ body {
 
 .navItem:hover {
     --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-
 }
 
 .navInput:checked + .navMenu {
-    background: #FFD523;
+    background: $colorSecundario;
 }
 
 .navLabel, .navInput {
     display:none;
 }
 
-/* Estilos index */
- 
-.gallery {
-margin-top: 5%;
-margin-left: 10%;
-margin-right: 10%;
-}
-.gallery img{
-    height: 10%;
-}
-
-
-/* Fin Estilos Index */
-
-.pSlide {
-    margin-top: 4%;
-    color: #FFD523;
-    text-align: center;
-    padding-bottom: 12%;
-}
-
-/* Compatibilidad para Mobile */
+/* COMPATIBILIDAD MOBILE NAVBAR */
 
 @media (max-width:700px) {
 
-    /* Compatibilidad para mobile de la NavBar */
     .navLabel{
         display: block;
         cursor: pointer;
@@ -124,7 +101,7 @@ margin-right: 10%;
         position: fixed;
         top: 10vh;
         bottom: 8vh;
-        background-color: #FFD523;
+        background-color: $colorSecundario;
         width: 100%;
         left: 0;
         display: flex;
@@ -141,22 +118,18 @@ margin-right: 10%;
     }
 }
 
+/* FOOTER */
 
-
-
-
-/* Estilos del Footer */
 footer {
     height: 8vh;
     width: 100%;
-    background-color: #2C2E43;
+    background-color: $colorFooter;
     display: flex;
     bottom: 0%;
     align-self: flex-end;
     justify-content: space-evenly;
     position:fixed;
     bottom: 0;
-
 }
 
 footer div {
@@ -165,17 +138,17 @@ footer div {
 }
 
 .fa-instagram {
-    color: #FFD523;
+    color: $colorSecundario;
     text-decoration: none;
 }
 
 .fa-facebook-square {
-    color: #FFD523;
+    color: $colorSecundario;
     text-decoration: none;
 }
 
 .fa-envelope {
-    color: #FFD523;
+    color: $colorSecundario;
     text-decoration: none;
 }
 
@@ -187,85 +160,11 @@ footer div {
 }
 
 .fa-facebook-square:hover {
-    color: #3b5998;
+    color: $colorFb;
     text-decoration: none;
 }
 
 .fa-envelope:hover {
-    color: rgb(123, 217, 245);
+    color: $colorMail;
     text-decoration: none;
-}
-
-
-
-
-/* CONTACTO */
-
-.map{
-    display: flex;
-    overflow:hidden;
-    padding-bottom:46.25%;
-    position:relative;
-    height:0;
-    justify-content: space-evenly;
-
-}
-
-.map iframe{
-    display: flex;
-    margin: auto;
-    width:80%;
-    position:absolute;
-
-}
-
-.contactForm {
-    display:flex;
-    width: 60vw;
-    margin: auto;
-    position: relative;
-    margin-bottom: 10%;
-    padding-bottom: 10%;
-}
-
-.form-label {
-    color: white;
-
-}
-
-.botonEnviar {
-    color: black;
-    background-color: #FFD523;
-    border-color: #FFD523;
-}
-
-/* NOSOTROS */
-
-.nosotrosweb {
-    display: grid;
-    margin-top: 4%;
-    padding-bottom: 14%;
-}
-
-/* TRABAJOS */
-
-.tablaTrabajos {
-    margin-top: 2%;
-   
-}
-
-/* CLIENTES */
-
-.client-container {
-    display: flex;
-
-}
-
-.ppal-client-container {
-    margin-top: 4%;
-
-}
-
-.ultimo-client-container {
-    padding-bottom: 15%;
 }

@@ -1,0 +1,18 @@
+@import "/scss/base/general"
+
+.gallery {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.gallery img{
+        height: 10%;
+}
+
+.pSlide {
+    margin-top: 4%;
+    color: $colorSecundario;
+    text-align: center;
+    padding-bottom: 12%;
+}
