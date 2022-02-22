@@ -1,0 +1,2 @@
+Agregue descriptions en cada HTML. Los títulos ya estaban modificados desde la creación.
+Use get-map en _general.scss y mixin en _variables.scss

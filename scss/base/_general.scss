@@ -9,7 +9,7 @@
 /* BODY */
 
 body {
-    background-color: $colorFondo;
+    background-color: map-get($colores , colorFondo);
     height: 100vh;
 }
 
@@ -18,7 +18,7 @@ body {
 .nav {
     background-color: $colorNav;
     height: 10vh;
-    color: $colorW;
+    color: map-get($colores , colorW);
  }
 
  .navContainer {
@@ -35,7 +35,7 @@ body {
     font-family: 'Syncopate', sans-serif;
     font-size: 2.6rem;
     font-weight: bold;
-    color: $colorSecundario;
+    color: map-get($colores , colorSecundario);
     margin-top: 22%;
     margin-left: 6%;
     line-height: 10%;
@@ -44,7 +44,7 @@ body {
 
 .parrafo {
     font-size: 100%;
-    color: $colorSecundario;
+    color: map-get($colores , colorSecundario);
     font-family: 'Syncopate', sans-serif;
     margin-top: 8%;
     margin-left: 3;
@@ -57,7 +57,7 @@ body {
 }
 
 .navItem {
-    color: $colorW;
+    color: map-get($colores , colorW);
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bolder;
@@ -67,7 +67,7 @@ body {
 .navItem::after {
     content: "";
     display: block;
-    background: $colorSecundario;
+    background: map-get($colores , colorSecundario);
     width: 90%;
     margin-top: 3px;
     height: 5px;
@@ -81,7 +81,7 @@ body {
 }
 
 .navInput:checked + .navMenu {
-    background: $colorSecundario;
+    background: map-get($colores , colorSecundario);
 }
 
 .navLabel, .navInput {
@@ -90,7 +90,7 @@ body {
 
 /* COMPATIBILIDAD MOBILE NAVBAR */
 
-@media (max-width:700px) {
+@include mediaQueryMobile {
 
     .navLabel{
         display: block;
@@ -101,7 +101,7 @@ body {
         position: fixed;
         top: 10vh;
         bottom: 8vh;
-        background-color: $colorSecundario;
+        background-color: map-get($colores , colorSecundario);
         width: 100%;
         left: 0;
         display: flex;
@@ -123,7 +123,7 @@ body {
 footer {
     height: 8vh;
     width: 100%;
-    background-color: $colorFooter;
+    background-color: map-get($colores , colorFooter);
     display: flex;
     bottom: 0%;
     align-self: flex-end;
@@ -138,17 +138,17 @@ footer div {
 }
 
 .fa-instagram {
-    color: $colorSecundario;
+    color: map-get($colores , colorSecundario);
     text-decoration: none;
 }
 
 .fa-facebook-square {
-    color: $colorSecundario;
+    color: map-get($colores , colorSecundario);
     text-decoration: none;
 }
 
 .fa-envelope {
-    color: $colorSecundario;
+    color: map-get($colores , colorSecundario);
     text-decoration: none;
 }
 
@@ -160,11 +160,11 @@ footer div {
 }
 
 .fa-facebook-square:hover {
-    color: $colorFb;
+    color: map-get($colores , colorFb);
     text-decoration: none;
 }
 
 .fa-envelope:hover {
-    color: $colorMail;
+    color: map-get($colores , colorMail);
     text-decoration: none;
 }

@@ -5,3 +5,20 @@ $colorSecundario: #FFD523;
 $colorFooter: #2C2E43;
 $colorFb: #3b5998;
 $colorMail: rgb(123, 217, 245);
+
+$colores: (
+    colorFondo: #595260,
+    colorNav: #2C2E43,
+    colorW: white,
+    colorSecundario: #FFD523,
+    colorFooter: #2C2E43,
+    colorFb: #3b5998,
+    colorMail: rgb(123, 217, 245),
+);
+
+@mixin mediaQueryMobile {
+    @media (max-width:700px) {
+        @content;
+    }
+}
+
