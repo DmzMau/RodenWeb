@@ -138,3 +138,17 @@ footer div {
 .fa-envelope:hover {
   color: #7bd9f5;
   text-decoration: none; }
+
+.gallery {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.gallery img {
+  height: 5%; }
+
+.pSlide {
+  margin-top: 4%;
+  color: #FFD523;
+  text-align: center;
+  padding-bottom: 12%; }
