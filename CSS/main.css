@@ -152,3 +152,65 @@ footer div {
   color: #FFD523;
   text-align: center;
   padding-bottom: 12%; }
+
+.nosotrosweb {
+  display: grid;
+  margin-top: 4%;
+  padding-bottom: 14%; }
+
+.gallery {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.gallery img {
+  height: 5%; }
+
+.pSlide {
+  margin-top: 4%;
+  color: #FFD523;
+  text-align: center;
+  padding-bottom: 12%; }
+
+.tablaTrabajos {
+  margin-top: 2%;
+  margin-bottom: 10%; }
+
+.client-container {
+  display: flex; }
+
+.ppal-client-container {
+  margin-top: 4%; }
+
+.ultimo-client-container {
+  padding-bottom: 15%; }
+
+.map {
+  display: flex;
+  overflow: hidden;
+  padding-bottom: 46.25%;
+  position: relative;
+  height: 0;
+  justify-content: space-evenly; }
+
+.map iframe {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  position: absolute; }
+
+.contactForm {
+  display: flex;
+  width: 60vw;
+  margin: auto;
+  position: relative;
+  margin-bottom: 10%;
+  padding-bottom: 10%; }
+
+.form-label {
+  color: white; }
+
+.botonEnviar {
+  color: black;
+  background-color: #FFD523;
+  border-color: #FFD523; }
