@@ -156,7 +156,7 @@ footer div {
 .nosotrosweb {
   display: grid;
   margin-top: 4%;
-  padding-bottom: 14%; }
+  padding-bottom: 16%; }
 
 .gallery {
   margin-top: 5%;
@@ -166,46 +166,46 @@ footer div {
 .gallery img {
   height: 5%; }
 
+.table {
+  margin-top: 2%;
+  padding-bottom: 10%; }
+
 .pSlide {
   margin-top: 4%;
   color: #FFD523;
   text-align: center;
-  padding-bottom: 12%; }
-
-.tablaTrabajos {
-  margin-top: 2%;
-  margin-bottom: 10%; }
+  padding-bottom: 10%; }
 
 .client-container {
   display: flex; }
 
 .ppal-client-container {
-  margin-top: 4%; }
+  margin-top: 2%; }
 
 .ultimo-client-container {
-  padding-bottom: 15%; }
+  padding-bottom: 10%; }
 
 .map {
   display: flex;
   overflow: hidden;
-  padding-bottom: 46.25%;
   position: relative;
-  height: 0;
+  height: 60%;
   justify-content: space-evenly; }
 
 .map iframe {
   display: flex;
-  margin: auto;
+  margin: 1% auto;
   width: 80%;
-  position: absolute; }
+  position: absolute;
+  padding-bottom: 1%; }
 
 .contactForm {
   display: flex;
   width: 60vw;
-  margin: auto;
+  margin: 1% auto;
   position: relative;
   margin-bottom: 10%;
-  padding-bottom: 10%; }
+  padding-bottom: 14%; }
 
 .form-label {
   color: white; }
